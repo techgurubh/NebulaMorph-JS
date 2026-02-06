@@ -1,1 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050505;
+    overflow: hidden;
+    font-family: 'Rajdhani', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ui-layer {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8vh;
+    pointer-events: none;
+}
+
+input {
+    pointer-events: all;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    outline: none;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+    border-color: #00fff2;
+    background: rgba(0, 255, 242, 0.05);
+    box-shadow: 0 0 25px rgba(0, 255, 242, 0.3);
+    transform: scale(1.02);
+}
 
